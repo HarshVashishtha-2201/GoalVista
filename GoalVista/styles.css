@@ -15,7 +15,7 @@
 }
 @font-face {
   font-family: myFont3;
-  src: url(Tr.ttfs);
+  src: url(spy.ttf);
   
 }
 
@@ -234,18 +234,20 @@
   
 
 }
-.developer{
-  position: relative; /* Position it absolutely */
-  top: 380px;/* Distance from the top */
-  left: 570px; /* Distance from the right */
-  display: flex; /* Use flexbox to align items */
-  align-items: center; /* Center items vertically */
-  z-index: 10; /* Bring header in front of the video */
-  text-align: justify;
-  color: rgb(255, 255, 255);
-}
-
-.developer p {
+.developer {
+  position: absolute; /* Position it relative to the nearest positioned ancestor */
+  bottom: 10px; /* Distance from the bottom */
+  right: 10px; /* Distance from the right */
+  z-index: 10; /* Bring it in front of the video */
+  color: rgb(250, 136, 136); /* White text color */
+  font-size: 14px; /* Adjust the font size */
+  font-family: Arial, sans-serif; /* Optional: Set font family */
+  text-align: right; /* Align text to the right */
   font-family: myFont3;
 
 }
+
+
+
+
+
