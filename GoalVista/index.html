@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GoalVista</title>
+  <link rel="icon" href="./assets/file.png" type="image/x-icon"> <!-- Link to your favicon -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header with Logo and Website Name -->
+  <header class="header">
+    <img src="./assets/file.png" alt="Logo" class="logo">
+    
+     <h1>Goal Vista</h1>
+  </header>
+
+  <!-- Video Background -->
+  <video autoplay muted loop id="background-video">
+    <source src="./assets/6961824-uhd_3840_2160_30fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Dream Checklist Container -->
+  <div class="container">
+    <H2>WELCOME, BUDDY</H2>
+    <!-- <br> -->
+    <h2>ENTER YOUR GOALS</h2>
+    <div id="clock"></div>
+
+    <form id="dream-form">
+      <input type="text" id="dream-input" placeholder="Enter your dream..." required>
+      <input type="number" id="current-age" placeholder="Your current age" required>
+      <input type="number" id="achieve-age" placeholder="Achieve by age" required>
+      <button type="submit">Add Dream</button>
+    </form>
+
+    <ul id="dream-list"></ul>
+  </div>
+
+  <!-- Side Goals Panel -->
+  <div class="goals-panel">
+    <h2>🎯GOALS</h2>
+    <ul id="goals-list"></ul>
+  </div>
+  <div class="developer">
+    <p>
+  ||Harsh Vashishtha ||
+
+    </p>
+    
+   
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

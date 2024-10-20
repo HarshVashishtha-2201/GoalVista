@@ -1,0 +1,251 @@
+/* Basic Reset */
+
+@font-face {
+  font-family: myFont;
+  src: url(w.ttf);
+}
+@font-face {
+  font-family: myFont1;
+  src: url(blow.ttf);
+}
+@font-face {
+  font-family: myFont2;
+  src: url(HL.ttf);
+  
+}
+@font-face {
+  font-family: myFont3;
+  src: url(Tr.ttfs);
+  
+}
+
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  .logo {
+    height: 50px; /* Adjust as necessary */
+    vertical-align: middle; /* Align with text */
+    margin-right: 10px; /* Space between logo and text */
+  }
+  
+  
+  body {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: relative;
+  }
+  
+  /* Video Background */
+  #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.7);
+  }
+  
+  /* Container Styles */
+  .container {
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(15, 52, 96, 0.6);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    box-shadow: 0 8px 32px rgb(93, 72, 174);
+    z-index: 1;
+  }
+
+  .container h2{
+    font-family: myFont1;
+
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  #clock {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #e94560;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00d0ff;
+  }
+  
+  /* Dream List Styles */
+  ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  /* Side Goals Panel */
+  .goals-panel {
+    /*
+    
+    
+    
+    max-height: 80vh;
+    
+    background-color: rgba(15, 52, 96, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 15px;
+    */
+    top: 35px;
+    position: absolute;
+    right: 10px;
+    width: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(71, 89, 112);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    box-shadow: 0 8px 32px rgb(0, 0, 0);
+    z-index: 1;
+  }
+  
+  .goals-panel h2 {
+    color: rgba(255, 255, 255, 0.959);
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: myFont;
+  }
+  
+  .goal-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .goal-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .goal-details {
+    display: none;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  button.delete,
+  button.complete {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.delete {
+    
+    color: white;
+  }
+  
+  button.complete {
+    
+    color: white;
+  }
+  /* styles.css */
+
+/* Header styles */
+
+
+
+.header {
+  position: absolute; /* Position it absolutely */
+  top: 30px; /* Distance from the top */
+  left: 20px; /* Distance from the right */
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center items vertically */
+  z-index: 10; /* Bring header in front of the video */
+  
+}
+
+.logo {
+  width: 68px; /* Adjust the logo size */
+  height: 68px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.header h1 {
+  font-size: 50px; /* Adjust font size */
+  color: rgb(196, 60, 249); /* Change text color as needed */
+  /* font-style: italic; */
+  font-family: myFont2;
+  line-height: 68px; /* Match the line height to the logo height */
+  margin: 0; /* Remove default margin */
+  
+
+}
+.developer{
+  position: relative; /* Position it absolutely */
+  top: 380px;/* Distance from the top */
+  left: 570px; /* Distance from the right */
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Center items vertically */
+  z-index: 10; /* Bring header in front of the video */
+  text-align: justify;
+  color: rgb(255, 255, 255);
+}
+
+.developer p {
+  font-family: myFont3;
+
+}
